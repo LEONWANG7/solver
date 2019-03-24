@@ -1,3 +1,10 @@
+# checkpointer = ModelCheckpoint(filepath='saved_models/weights.best.from_scratch.hdf5',
+#                                verbose=1, save_best_only=True)
+#
+# history = model.fit(train_tensors, train_targets,
+#           validation_data=(valid_tensors, valid_targets),
+#           epochs=epochs, batch_size=20, callbacks=[checkpointer], verbose=1)
+
 def history_observation(history, plt):
     # list all data in history
     print(history.history.keys())
